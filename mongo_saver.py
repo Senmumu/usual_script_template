@@ -30,7 +30,7 @@ class PipelineItem(object):
             quote_plus(user), quote_plus(password), host, port)
         client = pymongo.MongoClient(uri)
         db = client[db_name]
-        self.collection = db[col_name]
+        self._collection = db[col_name]
 
     def process(self, data_json):
         """
@@ -40,5 +40,5 @@ class PipelineItem(object):
         you can modify insert_one to insert_many to save a json list
         """
 
-        self.collection.insert_one(data_json)
+        self._collection.insert_one(data_json)
         print('save success')
