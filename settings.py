@@ -9,7 +9,6 @@ MONGODB_DBNAME = 'some_db'
 MONGODB_USERNAME = 'username'
 MONGO_PASSWORD = os.getenv('MONGO_PASSWORD')
 
-
 # Redis Settings
 REDIS_HOST = '192.168.0.202'
 REDIS_PORT = 27017
