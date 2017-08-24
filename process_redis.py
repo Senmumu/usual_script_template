@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-
+"""redis conn"""
 import redis
 import settings
 
