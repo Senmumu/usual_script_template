@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 操作mysql
-Ryan Luo
+Rickon Luo
+13.8.2017
 """
 import pymysql
 
