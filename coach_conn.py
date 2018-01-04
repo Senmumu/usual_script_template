@@ -11,6 +11,7 @@ class CoachConn(object):
         ''' 初始化 '''
         self._conn = psycopg2.connect(database=settings.CoachDB,
                                       user=settings.CoachUser,
+                                      password=settings.CoachPassword,
                                       host=settings.CoachHost,
                                       port=settings.CoachPort,)
         self._conn.set_session(autocommit=True)
