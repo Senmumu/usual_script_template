@@ -9,11 +9,11 @@ class CoachConn(object):
 
     def __init__(self):
         ''' 初始化 '''
-        self._conn = psycopg2.connect(database=settings.CoachDB,
-                                      user=settings.CoachUser,
-                                      password=settings.CoachPassword,
-                                      host=settings.CoachHost,
-                                      port=settings.CoachPort,)
+        self._conn = psycopg2.connect(database=settings.COACH_DB,
+                                      user=settings.COACH_USER,
+                                      password=settings.COACH_PASSWORD,
+                                      host=settings.COACH_HOST,
+                                      port=settings.COACH_PORT,)
         self._conn.set_session(autocommit=True)
 
     def read_data(self, select_sql, *data):
