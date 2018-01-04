@@ -29,7 +29,7 @@ class CoachConn(object):
             cur.executemany(update_sql, data)
 
     def insert_data(self, insert_sql, *data):
-        ''' 更新数据 '''
+        ''' 插入数据 '''
         with self._conn.cursor() as cur:
             cur.executemany(insert_sql, data)
 
