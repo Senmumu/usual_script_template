@@ -4,4 +4,4 @@ some usual script templates  to connect these databases
 - [x] neo4j
 - [x] mongodb
 - [x] redis
-- [x] CockroachDB or postgres
+- [x] CockroachDB or PostgreSQL
